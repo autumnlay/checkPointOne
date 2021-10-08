@@ -1,0 +1,25 @@
+header{
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+.bg-food-image{
+    background-image: url("https://s3-alpha-sig.figma.com/img/6df5/69fe/735749e495389433abe8c1c8a55bb389?Expires=1634515200&Signature=YBfiCXrbjjxwDUjoLlEUr60M5sMrz3rOYqJCYOVDvhlnGC0f-gYA6n4AQmrl94wEjytzS4q3TH08XkAId0sysRZewn85nbopJSQZvRA1anytrY4cAx8~gxKDkYvAXh5IAmZcv-kPeZQNvLaeacSt10O8PgyJpD-mTETu2kphqhRICTI8-LYKegOHPBfHypG-pmzo0-Hc3bI--6VGduKSRUJa3n~KL3NH983Wz11DosU2c4f1lJbNa42OJqLFQfMQ5cKgnerR9HcO~TGKcsDa16IuPAgnwi~dia1GxzxCf0ZnjngKcwOE5OmTjglqCMu63hrvfgh7rmgxby0iYvO5eQ__&Key-Pair-Id=APKAINTVSUGEWH5XD5UA");
+    background-size: cover;
+    background-position: center;
+
+}
+
+@media only screen and (min-width: 768px) {
+.card-spill{
+  transform: translateY(50px);
+}
+}
+
+@media only screen and (max-width: 768px){
+  .foodText{
+    display: none;
+  }
+}
+
+

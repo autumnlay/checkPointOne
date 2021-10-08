@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-uWxY/CJNBR+1zjPWmfnSnVxwRheevXITnMqoEIeG1LJrdI0GlVs/9cVSyPYXdcSF" crossorigin="anonymous">
+    <title>Checkpoint One</title>
+</head>
+
+<style>
+    body.debug.container,
+    body.debug.container-fluid {
+        outline: 2px double blue;
+        outline-offset: -2px;
+    }
+
+    body.debug.row {
+        outline: 2px dashed red;
+        outline-offset: -2px;
+    }
+
+    body.debug [class*="col-"] {
+        outline: 2px dotted forestgreen;
+        outline-offset: -3px;
+    }
+</style>
+
+<body class="debug">
+    <header class="container-fluid sticky-top p-0">
+        <nav class="navbar navbar-nav-scroll p-3 navbar-light bg-light">
+            <div class="">
+                <a class="navbar-brand" href="#">
+                    <img src="https://cdn-icons.flaticon.com/png/512/5700/premium/5700783.png?token=exp=1633717915~hmac=2fb6ddc7d9ba2228449d23ee292d62a6"
+                        alt="" width="45" height="40" class="d-inline-block align-text-center">
+                    Food For Thought
+                </a>
+            </div>
+        </nav>
+    </header>
+
+    <main class="container-fluid">
+        <div class="row bg-food-image bg-dark">
+            <div class="col col-md-4 p-4">
+                <div class="form-floating mb-2">
+                    <input type="name" class="form-control" id="floatingInput" placeholder="name@example.com">
+                    <label for="floatingInput">Name</label>
+                </div>
+                <div class="form-floating mb-2">
+                    <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
+                    <label for="floatingInput">Email</label>
+                </div>
+                <div class="form-floating mb-3">
+                    <input type="number" class="form-control" id="floatingInput" placeholder="name@example.com">
+                    <label for="floatingInput">Number</label>
+                </div>
+                <div class="form-floating mb-3">
+                    <input type="message" class="form-control" id="floatingInput" placeholder="name@example.com">
+                    <label for="floatingInput">Message</label>
+                </div>
+
+            </div>
+
+            <div class="col-md-8  d-flex justify-content-center align-items-center text-center text-light ">
+                <div class="foodText">
+                    <h3>Food Yum!!</h3>
+                    <p>Yeah some food stuff here! yum!</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="row d-flex flex-md-row bg-primary p-4">
+            <div class="col-md-6 p-4 d-flex order-md-1 order-2 align-items-center">
+                <div>
+                    <h4>Have you been having food troubles?</h4>
+                    <h5>No worries!</h5>
+                    <p>Here is all the things we want you to know haha</p>
+                </div>
+            </div>
+            <div class="col-md-6 p-4 p-md-2 d-flex order-md-2 order-1 justify-content-center align-items-center">
+                <div class="card card-spill" style="width: 18rem;">
+                    <ul class="list-group list-group-flush">
+                        <li class="list-group-item">Fruit</li>
+                        <li class="list-group-item">Vegetable</li>
+                        <li class="list-group-item">Grains</li>
+                        <li class="list-group-item">Protien</li>
+                        <li class="list-group-item">Fats, oils, surgars</li>
+                    </ul>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-md-3 p-5">
+                <img src="https://s3-alpha-sig.figma.com/img/6b6d/8e24/6e8a72609f7e33730316be77fa41a4c7?Expires=1634515200&Signature=apeaMkpNJaJwX-Jw84hizRzcmUxYQklzdc~EbZVyIJdJ04U3dDnS5CCqaYzaa0CtfY618GLDSoZp5E7ldIBapdLGs5jyFxVjF9RnncJTSsZwY-AIAvB6VGoNDfyAUDLcXbScfmlLHqxwTsyg2dhUeAK3z2BZleBuXHRs70dWgUok1ulfQMFpoRzvt7hoyUrYN4Gcr3DLUikvMvHDavrahHUTb1DHrHw6TNVE7602659~uAGLPhjgM0Wff-GxEdxP2izBLRMo9NeISpy5oHpAbJOx-juD51HQykrDjkZF8xPc4hmvLl6lpppcOlRJ3Yzhb5ijI9W8OoE-2-ngBQAMqw__&Key-Pair-Id=APKAINTVSUGEWH5XD5UA"
+                    class="img-fluid" alt="...">
+            </div>
+            <div class="col-md-9 d-flex justify-content-center p-5">
+                <div class="card " style="width: 18rem;">
+                    <div class="card-body">
+                        <h5 class="card-title">Special title treatment</h5>
+                        <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                        <a href="#" class="btn btn-primary">Go somewhere</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- put down order-md accourdingly in each col -->
+        <div class="row">
+            <div class="col-md-4">comment 1
+                <div class="card" style="width: 18rem;">
+                    <img src="..." class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Card title</h5>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of
+                            the card's
+                            content.</p>
+                        <a href="#" class="btn btn-primary">Go somewhere</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">comment 2
+                <div class="card" style="width: 18rem;">
+                    <img src="..." class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Card title</h5>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of
+                            the card's
+                            content.</p>
+                        <a href="#" class="btn btn-primary">Go somewhere</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">comment 3
+                <div class="card" style="width: 18rem;">
+                    <img src="..." class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Card title</h5>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of
+                            the card's
+                            content.</p>
+                        <a href="#" class="btn btn-primary">Go somewhere</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col">bottom search
+                <div class="container-fluid">
+                    <form class="d-flex">
+                        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                        <button class="btn btn-outline-success" type="submit">Search</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+
+    </main>
+
+
+    <footer class="container-fluid">
+        <div class="row d-flex justify-conent-center align-items-center text-center"> footer stuff</div>
+
+
+    </footer>
+</body>
+
+</html>
