@@ -44,35 +44,57 @@
     </header>
 
     <main class="container-fluid">
-        <div class="row bg-food-image bg-dark">
-            <div class="col col-md-4 p-4">
-                <div class="form-floating mb-2">
-                    <input type="name" class="form-control" id="floatingInput" placeholder="name@example.com">
-                    <label for="floatingInput">Name</label>
-                </div>
-                <div class="form-floating mb-2">
-                    <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
-                    <label for="floatingInput">Email</label>
-                </div>
-                <div class="form-floating mb-3">
-                    <input type="number" class="form-control" id="floatingInput" placeholder="name@example.com">
-                    <label for="floatingInput">Number</label>
-                </div>
-                <div class="form-floating mb-3">
-                    <input type="message" class="form-control" id="floatingInput" placeholder="name@example.com">
-                    <label for="floatingInput">Message</label>
-                </div>
+        <div class="row bg-food-image bg-dark p-3">
+            <div class="col-12 col-md-3 p-3 m-3 bg-light d-flex justify-content-center align-item-center">
+
+                <form class="row">
+                    <div>
+                        <h5>First Heading</h5>
+                    </div>
+
+                    <div class="col-12">
+                        <label for="inputName" class="form-label"></label>
+                        <input type="text" class="form-control" id="inputName" placeholder="Name">
+                    </div>
+                    <div class="col-12">
+                        <label for="inputEmail" class="form-label"></label>
+                        <input type="text" class="form-control" id="inputEmail" placeholder="Email">
+                    </div>
+                    <div class="col-7">
+                        <label for="inputPhone" class="form-label"></label>
+                        <input type="text" class="form-control" id="inputPhone" placeholder="Phone">
+                    </div>
+                    <div class="col-5">
+                        <label for="inputExt" class="form-label"></label>
+                        <input type="text" class="form-control" id="inputExt" placeholder="ext.">
+                    </div>
+                    <div class="col-12">
+                        <label for="inputMessages" class="form-label"></label>
+                        <input type="text" class="form-control" id="inputMessages" placeholder="Messages">
+                    </div>
+                    <div class="col-12 p-1">
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" id="gridCheck">
+                            <label class="form-check-label" for="gridCheck">
+                                Check me out
+                            </label>
+                        </div>
+                    </div>
+                    <div class="col-12 p-2">
+                        <button type="submit" class="btn btn-primary">Sign in</button>
+                    </div>
+                </form>
 
             </div>
-
-            <div class="col-md-8  d-flex justify-content-center align-items-center text-center text-light ">
+            <div
+                class="col-12 col-md-8 d-flex justify-content-center align-items-center text-center text-light foodText">
                 <div class="foodText">
                     <h3>Food Yum!!</h3>
                     <p>Yeah some food stuff here! yum!</p>
                 </div>
             </div>
-        </div>
 
+        </div>
         <div class="row d-flex flex-md-row bg-primary p-4">
             <div class="col-md-6 p-4 d-flex order-md-1 order-2 align-items-center">
                 <div>
