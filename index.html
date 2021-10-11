@@ -6,50 +6,42 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+    <link href="https://fonts.googleapis.com/css2?family=Fjalla+One&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-uWxY/CJNBR+1zjPWmfnSnVxwRheevXITnMqoEIeG1LJrdI0GlVs/9cVSyPYXdcSF" crossorigin="anonymous">
     <title>Checkpoint One</title>
 </head>
 
-<style>
-    body.debug.container,
-    body.debug.container-fluid {
-        outline: 2px double blue;
-        outline-offset: -2px;
-    }
-
-    body.debug.row {
-        outline: 2px dashed red;
-        outline-offset: -2px;
-    }
-
-    body.debug [class*="col-"] {
-        outline: 2px dotted forestgreen;
-        outline-offset: -3px;
-    }
-</style>
-
-<body class="debug">
+<body>
     <header class="container-fluid sticky-top p-0">
-        <nav class="navbar navbar-nav-scroll p-3 navbar-light bg-light">
-            <div class="">
+        <!-- navbar stick header -->
+        <nav class="navbar navbar-nav-scroll p-3 navbar-dark bg-dark">
+            <div class="astrobar">
                 <a class="navbar-brand" href="#">
-                    <img src="https://cdn-icons.flaticon.com/png/512/5700/premium/5700783.png?token=exp=1633717915~hmac=2fb6ddc7d9ba2228449d23ee292d62a6"
-                        alt="" width="45" height="40" class="d-inline-block align-text-center">
-                    Food For Thought
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                        class="bi bi-moon-stars-fill" viewBox="0 0 16 16">
+                        <path
+                            d="M6 .278a.768.768 0 0 1 .08.858 7.208 7.208 0 0 0-.878 3.46c0 4.021 3.278 7.277 7.318 7.277.527 0 1.04-.055 1.533-.16a.787.787 0 0 1 .81.316.733.733 0 0 1-.031.893A8.349 8.349 0 0 1 8.344 16C3.734 16 0 12.286 0 7.71 0 4.266 2.114 1.312 5.124.06A.752.752 0 0 1 6 .278z" />
+                        <path
+                            d="M10.794 3.148a.217.217 0 0 1 .412 0l.387 1.162c.173.518.579.924 1.097 1.097l1.162.387a.217.217 0 0 1 0 .412l-1.162.387a1.734 1.734 0 0 0-1.097 1.097l-.387 1.162a.217.217 0 0 1-.412 0l-.387-1.162A1.734 1.734 0 0 0 9.31 6.593l-1.162-.387a.217.217 0 0 1 0-.412l1.162-.387a1.734 1.734 0 0 0 1.097-1.097l.387-1.162zM13.863.099a.145.145 0 0 1 .274 0l.258.774c.115.346.386.617.732.732l.774.258a.145.145 0 0 1 0 .274l-.774.258a1.156 1.156 0 0 0-.732.732l-.258.774a.145.145 0 0 1-.274 0l-.258-.774a1.156 1.156 0 0 0-.732-.732l-.774-.258a.145.145 0 0 1 0-.274l.774-.258c.346-.115.617-.386.732-.732L13.863.1z" />
+                    </svg>
+                    Astrophotography
+
                 </a>
             </div>
         </nav>
     </header>
 
     <main class="container-fluid">
-        <div class="row bg-food-image bg-dark p-3">
-            <div class="col-12 col-md-3 p-3 m-3 bg-light d-flex justify-content-center align-item-center">
-
+        <!-- first section -->
+        <div class="row bg-astro-image bg-dark p-3">
+            <div
+                class="col-12 col-md-3 p-3 m-3 me-5 me-5 bg-light d-flex justify-content-center align-item-center rounded">
+                <!-- form to fill out -->
                 <form class="row">
                     <div>
-                        <h5>First Heading</h5>
+                        <h5>Subscribe and share your experience!</h5>
                     </div>
 
                     <div class="col-12">
@@ -81,105 +73,163 @@
                         </div>
                     </div>
                     <div class="col-12 p-2">
-                        <button type="submit" class="btn btn-primary">Sign in</button>
+                        <button type="submit" class="btn btn-primary">Sign up</button>
                     </div>
                 </form>
 
             </div>
-            <div
-                class="col-12 col-md-8 d-flex justify-content-center align-items-center text-center text-light foodText">
-                <div class="foodText">
-                    <h3>Food Yum!!</h3>
-                    <p>Yeah some food stuff here! yum!</p>
+            <!-- text on right in first section -->
+            <div class="astroFam col-md-8 pt-5 d-flex justify-content-center text-start text-dark">
+                <div class="astrobar astroFam">
+                    <h3>Astro-photography</h3>
+                    <p>Join the community today!</p>
                 </div>
             </div>
 
         </div>
-        <div class="row d-flex flex-md-row bg-primary p-4">
+        <!-- section 2 -->
+        <div class="row d-flex flex-md-row astro-medium p-4 text-light">
             <div class="col-md-6 p-4 d-flex order-md-1 order-2 align-items-center">
-                <div>
-                    <h4>Have you been having food troubles?</h4>
-                    <h5>No worries!</h5>
-                    <p>Here is all the things we want you to know haha</p>
+                <div class="astrobar">
+                    <h4>Join the astrophotography communtiy!</h4>
+                    <h5>Join us today!</h5>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis architecto, voluptas
+                        aliquid eveniet odio sapiente, iusto magni vitae repellendus quos excepturi similique, tempora
+                        unde exercitationem ratione eaque minima natus. Quam.</p>
                 </div>
             </div>
             <div class="col-md-6 p-4 p-md-2 d-flex order-md-2 order-1 justify-content-center align-items-center">
                 <div class="card card-spill" style="width: 18rem;">
                     <ul class="list-group list-group-flush">
-                        <li class="list-group-item">Fruit</li>
-                        <li class="list-group-item">Vegetable</li>
-                        <li class="list-group-item">Grains</li>
-                        <li class="list-group-item">Protien</li>
-                        <li class="list-group-item">Fats, oils, surgars</li>
+                        <li class="list-group-item">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                class="bi bi-sun-fill" viewBox="0 0 16 16">
+                                <path
+                                    d="M8 12a4 4 0 1 0 0-8 4 4 0 0 0 0 8zM8 0a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 0zm0 13a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 13zm8-5a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2a.5.5 0 0 1 .5.5zM3 8a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2A.5.5 0 0 1 3 8zm10.657-5.657a.5.5 0 0 1 0 .707l-1.414 1.415a.5.5 0 1 1-.707-.708l1.414-1.414a.5.5 0 0 1 .707 0zm-9.193 9.193a.5.5 0 0 1 0 .707L3.05 13.657a.5.5 0 0 1-.707-.707l1.414-1.414a.5.5 0 0 1 .707 0zm9.193 2.121a.5.5 0 0 1-.707 0l-1.414-1.414a.5.5 0 0 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .707zM4.464 4.465a.5.5 0 0 1-.707 0L2.343 3.05a.5.5 0 1 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .708z" />
+                            </svg> Contact
+                        </li>
+                        <li class="list-group-item">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                class="bi bi-moon-fill" viewBox="0 0 16 16">
+                                <path
+                                    d="M6 .278a.768.768 0 0 1 .08.858 7.208 7.208 0 0 0-.878 3.46c0 4.021 3.278 7.277 7.318 7.277.527 0 1.04-.055 1.533-.16a.787.787 0 0 1 .81.316.733.733 0 0 1-.031.893A8.349 8.349 0 0 1 8.344 16C3.734 16 0 12.286 0 7.71 0 4.266 2.114 1.312 5.124.06A.752.752 0 0 1 6 .278z" />
+                            </svg> Subscribe
+                        </li>
+                        <li class="list-group-item">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                class="bi bi-star-fill" viewBox="0 0 16 16">
+                                <path
+                                    d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                            </svg> Resources
+                        </li>
+                        <li class="list-group-item">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                class="bi bi-stars" viewBox="0 0 16 16">
+                                <path
+                                    d="M7.657 6.247c.11-.33.576-.33.686 0l.645 1.937a2.89 2.89 0 0 0 1.829 1.828l1.936.645c.33.11.33.576 0 .686l-1.937.645a2.89 2.89 0 0 0-1.828 1.829l-.645 1.936a.361.361 0 0 1-.686 0l-.645-1.937a2.89 2.89 0 0 0-1.828-1.828l-1.937-.645a.361.361 0 0 1 0-.686l1.937-.645a2.89 2.89 0 0 0 1.828-1.828l.645-1.937zM3.794 1.148a.217.217 0 0 1 .412 0l.387 1.162c.173.518.579.924 1.097 1.097l1.162.387a.217.217 0 0 1 0 .412l-1.162.387A1.734 1.734 0 0 0 4.593 5.69l-.387 1.162a.217.217 0 0 1-.412 0L3.407 5.69A1.734 1.734 0 0 0 2.31 4.593l-1.162-.387a.217.217 0 0 1 0-.412l1.162-.387A1.734 1.734 0 0 0 3.407 2.31l.387-1.162zM10.863.099a.145.145 0 0 1 .274 0l.258.774c.115.346.386.617.732.732l.774.258a.145.145 0 0 1 0 .274l-.774.258a1.156 1.156 0 0 0-.732.732l-.258.774a.145.145 0 0 1-.274 0l-.258-.774a1.156 1.156 0 0 0-.732-.732L9.1 2.137a.145.145 0 0 1 0-.274l.774-.258c.346-.115.617-.386.732-.732L10.863.1z" />
+                            </svg> Assitance
+                        </li>
+                        <li class="list-group-item">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                class="bi bi-camera2" viewBox="0 0 16 16">
+                                <path d="M5 8c0-1.657 2.343-3 4-3V4a4 4 0 0 0-4 4z" />
+                                <path
+                                    d="M12.318 3h2.015C15.253 3 16 3.746 16 4.667v6.666c0 .92-.746 1.667-1.667 1.667h-2.015A5.97 5.97 0 0 1 9 14a5.972 5.972 0 0 1-3.318-1H1.667C.747 13 0 12.254 0 11.333V4.667C0 3.747.746 3 1.667 3H2a1 1 0 0 1 1-1h1a1 1 0 0 1 1 1h.682A5.97 5.97 0 0 1 9 2c1.227 0 2.367.368 3.318 1zM2 4.5a.5.5 0 1 0-1 0 .5.5 0 0 0 1 0zM14 8A5 5 0 1 0 4 8a5 5 0 0 0 10 0z" />
+                            </svg> Products
+                        </li>
                     </ul>
                 </div>
 
             </div>
         </div>
-
-        <div class="row">
-            <div class="col-md-3 p-5">
-                <img src="https://s3-alpha-sig.figma.com/img/6b6d/8e24/6e8a72609f7e33730316be77fa41a4c7?Expires=1634515200&Signature=apeaMkpNJaJwX-Jw84hizRzcmUxYQklzdc~EbZVyIJdJ04U3dDnS5CCqaYzaa0CtfY618GLDSoZp5E7ldIBapdLGs5jyFxVjF9RnncJTSsZwY-AIAvB6VGoNDfyAUDLcXbScfmlLHqxwTsyg2dhUeAK3z2BZleBuXHRs70dWgUok1ulfQMFpoRzvt7hoyUrYN4Gcr3DLUikvMvHDavrahHUTb1DHrHw6TNVE7602659~uAGLPhjgM0Wff-GxEdxP2izBLRMo9NeISpy5oHpAbJOx-juD51HQykrDjkZF8xPc4hmvLl6lpppcOlRJ3Yzhb5ijI9W8OoE-2-ngBQAMqw__&Key-Pair-Id=APKAINTVSUGEWH5XD5UA"
+        <!-- section 3 -->
+        <div class="row astro-primary text-light p-3">
+            <div class="col-md-3 p-3 d-flex justify-content-center align-item-center">
+                <img src="https://s3-alpha-sig.figma.com/img/596e/ab7b/87ec4e26ecfb89eef89f05b48f14654f?Expires=1635120000&Signature=OJZh1Qi~lnmZiz76NuNJc3M6H8QRdUlk~cI-axwHvqA4zpriVweqD~w4CqEn8ke914iv9XwWZnXa50c-0yrxhSu22DfsURzeXAgR5BgPvCNdLixV-nqLzKCH8jMHtaP7hxR7xdCoQXstzGFzagvvZNSmj2FD~ChMOwgFR~woxlCn67GW6liBS1fJfkru9mHFMiwdC1rKbdngUHvj5rzMTFtUfZ9E5Z4yZ~033Uka7k3hPmUL42xgRBiXzALRvGDmeQawU9afsdAQj7FO9VWGX~AJsjiroY~Cg7~BfHsMfdQjM5tQcXDtgEPYoP7l3w4MiPspoHoIugcG9Yj8JZinAg__&Key-Pair-Id=APKAINTVSUGEWH5XD5UA"
                     class="img-fluid" alt="...">
             </div>
             <div class="col-md-9 d-flex justify-content-center p-5">
-                <div class="card " style="width: 18rem;">
+                <div class="" style="width: 18rem;">
                     <div class="card-body">
-                        <h5 class="card-title">Special title treatment</h5>
-                        <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-                        <a href="#" class="btn btn-primary">Go somewhere</a>
+                        <h5 class="card-title">Top products for Astrophotography</h5>
+                        <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti fugit
+                            nihil quia dolore. Molestias cumque autem dolores ducimus vel ea neque consequuntur enim
+                            ipsam. Delectus molestias reiciendis laborum placeat incidunt.</p>
+                        <a href="#" class="btn btn-primary">More</a>
                     </div>
                 </div>
             </div>
         </div>
-        <!-- put down order-md accourdingly in each col -->
-        <div class="row">
-            <div class="col-md-4 p-5 p-md-2 order-2 order-md-1 d-flex justify-content-center align-items-center">
+        <!-- Section 4: the reviews -->
+        <div class="row astro-medium text-center p-3">
+            <div
+                class="col-md-4 p-5 p-md-2 order-2 order-md-1 d-flex justify-content-center align-items-center text-center">
                 <div class="card" style="width: 18rem;">
-                    <img src="..." class="card-img-top" alt="...">
                     <div class="card-body">
-                        <h5 class="card-title">Card title</h5>
-                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of
-                            the card's
-                            content.</p>
-                        <a href="#" class="btn btn-primary">Go somewhere</a>
+                        <h5 class="card-title">Bob's Review</h5>
+                        <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam quo eius
+                            consequatur</p>
+
                     </div>
                 </div>
             </div>
             <div class="col-md-4 p-5 p-md-2 order-1 order-md-2 d-flex justify-content-center align-items-center">
                 <div class="card" style="width: 18rem;">
-                    <img src="..." class="card-img-top" alt="...">
+                    <div class="p-1 mt-2">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                            class="bi bi-star-fill" viewBox="0 0 16 16">
+                            <path
+                                d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                        </svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                            class="bi bi-star-fill" viewBox="0 0 16 16">
+                            <path
+                                d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                        </svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                            class="bi bi-star-fill" viewBox="0 0 16 16">
+                            <path
+                                d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                        </svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                            class="bi bi-star-fill" viewBox="0 0 16 16">
+                            <path
+                                d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                        </svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                            class="bi bi-star-fill" viewBox="0 0 16 16">
+                            <path
+                                d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                        </svg>
+                    </div>
                     <div class="card-body">
-                        <h5 class="card-title">Card title</h5>
-                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of
-                            the card's
-                            content.</p>
-                        <p>and stuff</p>
-                        <p>and more stuff</p>
-                        <a href="#" class="btn btn-primary">Go somewhere</a>
+                        <h5 class="card-title">Karen's Review</h5>Lorem ipsum, dolor sit amet consectetur adipisicing
+                        elit. Dolore, adipisci vitae. Tenetur, quae aut expedita itaque libero eum! Earum vel ipsam
+                        voluptate soluta alias eligendi autem explicabo assumenda perspiciatis deserunt.
+
                     </div>
                 </div>
             </div>
             <div class="col-md-4 p-5 p-md-2 order-3 d-flex justify-content-center align-items-center">
                 <div class="card" style="width: 18rem;">
-                    <img src="..." class="card-img-top" alt="...">
+
                     <div class="card-body">
-                        <h5 class="card-title">Card title</h5>
-                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of
-                            the card's
-                            content.</p>
-                        <a href="#" class="btn btn-primary">Go somewhere</a>
+                        <h5 class="card-title">Kyle's Review</h5>
+                        <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum assumenda
+                            nostrum obcaecati quos, expedita possimus. </p>
+
                     </div>
                 </div>
             </div>
         </div>
-
-        <div class="row p-3">
-            <div class="col">bottom search
+        <!-- section 5: bottom search bar-->
+        <div class="row p-3 astro-light">
+            <div class="col">
+                <h3>Check out our most common photos submited by the hobby!</h3>
                 <div class="container-fluid">
                     <form class="d-flex">
                         <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                        <button class="btn btn-outline-success" type="submit">Search</button>
+                        <button class="btn btn-dark" type="submit">Search</button>
                     </form>
                 </div>
             </div>
@@ -187,10 +237,12 @@
 
     </main>
 
-
-    <footer class="container-fluid">
+    <!-- footer -->
+    <footer class="container-fluid bg-dark text-light text-center justify-conent-center align-items-center">
         <div class="row p-5 d-flex justify-conent-center align-items-center text-center">
-            <div class="col d-flex justify-conent-center align-items-center text-center"> footerstuff</div>
+            <div class="col d-flex justify-conent-center align-items-center text-center">
+                <h5>What will you do today?</h5>
+            </div>
         </div>
 
 
